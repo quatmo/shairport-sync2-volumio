@@ -28,10 +28,11 @@ sudo tar -xzvf /$TMPPATH/shairport-sync.conf.sample.tar.gz --overwrite -C /
 sudo tar -xzvf /$TMPPATH/shairport-sync-airplay2.tar.gz --overwrite -C /
 
 sudo systemctl daemon-reload
+sudo systemctl enable nqptp.service
+sudo systemctl restart nqptp.service
 sudo systemctl enable shairport-sync.service
 sudo systemctl restart shairport-sync.service
 sync
 echo "Install OK"
 sudo systemctl status shairport-sync.service
-
 
