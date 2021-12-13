@@ -1,6 +1,6 @@
 #!/bin/sh
 # sudo chmod -R 777 /tmp/install.sh && sudo /tmp/install.sh
-# cd /tmp/ && sudo wget https://raw.githubusercontent.com/quatmo/shairport-sync2-volumio/main/install.sh
+# cd /tmp/ && sudo wget https://raw.githubusercontent.com/quatmo/shairport-sync2-volumio/main/install.sh && sudo chmod -R 777 /tmp/install.sh && sudo /tmp/install.sh
 sudo systemctl stop shairport-sync.service
 sudo rm /usr/local/bin/shairport-sync
 sudo rm /usr/bin/shairport-sync
@@ -27,10 +27,10 @@ sudo tar -xzvf /$TMPPATH/shairport-sync.conf.tar.gz --overwrite -C /
 sudo tar -xzvf /$TMPPATH/shairport-sync.conf.sample.tar.gz --overwrite -C /
 sudo tar -xzvf /$TMPPATH/shairport-sync-airplay2.tar.gz --overwrite -C /
 
-# sudo systemctl daemon-reload
-# sudo systemctl enable shairport-sync.service
-# sudo systemctl restart shairport-sync.service
-# sync
-# echo "Install OK"
-# sudo systemctl status shairport-sync.service
+sudo systemctl daemon-reload
+sudo systemctl enable shairport-sync.service
+sudo systemctl restart shairport-sync.service
+sync
+echo "Install OK"
+sudo systemctl status shairport-sync.service
 
