@@ -13,7 +13,7 @@ mkdir /tmp/shairport2
 TMPURL="https://raw.githubusercontent.com/quatmo/shairport-sync2-volumio/main"
 TMPPATH="tmp/shairport2"
 
-sudo wget -O /$TMPPATH/shairport2/nqptp.service.tar.gz $TMPURL/nqptp.service.tar.gz
+sudo wget -O /$TMPPATH/nqptp.service.tar.gz $TMPURL/nqptp.service.tar.gz
 sudo wget -O /$TMPPATH/nqptp.tar.gz $TMPURL/nqptp.tar.gz
 sudo wget -O /$TMPPATH/shairport-service-airplay2.tar.gz $TMPURL/shairport-service-airplay2.tar.gz
 sudo wget -O /$TMPPATH/shairport-sync.conf.tar.gz $TMPURL/shairport-sync.conf.tar.gz
