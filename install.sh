@@ -4,6 +4,8 @@
 sudo systemctl stop shairport-sync.service
 sudo rm /usr/local/bin/shairport-sync
 sudo rm /usr/bin/shairport-sync
+sudo rm /lib/systemd/system/shairport-sync.service
+sleep 1
 sudo apt-get update
 sudo apt install --no-install-recommends build-essential git xxd xmltoman autoconf automake libtool libpopt-dev libconfig-dev libasound2-dev libssl-dev libsoxr-dev libplist-dev libsodium-dev libavutil-dev libavcodec-dev libavformat-dev uuid-dev libgcrypt-dev
 
