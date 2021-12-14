@@ -1,12 +1,7 @@
 # shairport-sync2-volumio
 
-
-
-
 ```
-
 ```
-
 ### shairport-sync2-volumio 👋
 Shairport Sync: AirPlay 2 for Volumio
 #
