@@ -15,7 +15,8 @@ Shairport Sync: AirPlay 2 for Volumio 3
 > 
 ###### Check version
 > shairport-sync -V
-
+> 
+> reboot
 
 ####
 **Link** build from https://github.com/mikebrady/shairport-sync/blob/development/BUILDFORAP2.md
