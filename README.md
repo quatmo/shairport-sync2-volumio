@@ -10,7 +10,7 @@
 ### shairport-sync2-volumio 👋
 Shairport Sync: AirPlay 2 for Volumio
 #
-**Link** From https://github.com/mikebrady/shairport-sync/blob/development/BUILDFORAP2.md
+**Link** build from https://github.com/mikebrady/shairport-sync/blob/development/BUILDFORAP2.md
 
 
 ###### Install
