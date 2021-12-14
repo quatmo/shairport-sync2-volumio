@@ -3,7 +3,7 @@
 ```
 ```
 ### shairport-sync2-volumio 👋
-Shairport Sync: AirPlay 2 for Volumio
+Shairport Sync: AirPlay 2 for Volumio 3
 #
 
 ###### Install
