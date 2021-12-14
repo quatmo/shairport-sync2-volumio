@@ -32,6 +32,7 @@ sudo systemctl enable nqptp.service
 sudo systemctl restart nqptp.service
 sudo systemctl enable shairport-sync.service
 sudo systemctl restart shairport-sync.service
+#sudo systemctl status nqptp.service
 sync
 echo "Install OK"
 sudo systemctl status shairport-sync.service
