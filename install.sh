@@ -6,6 +6,7 @@ sudo rm /usr/local/bin/shairport-sync
 sudo rm /usr/bin/shairport-sync
 sudo apt-get update
 sudo apt-get install libsodium-dev
+sudo apt-get install libplist-dev
 sudo apt install --no-install-recommends build-essential git xxd xmltoman autoconf automake libtool libpopt-dev libconfig-dev libasound2-dev avahi-daemon libavahi-client-dev libssl-dev libsoxr-dev libplist-dev libsodium-dev libavutil-dev libavcodec-dev libavformat-dev uuid-dev libgcrypt-dev
 
 sync
