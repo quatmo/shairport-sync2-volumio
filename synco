@@ -1,0 +1,34 @@
+#!/bin/sh
+
+sudo systemctl stop shairport-sync.service
+sudo systemctl stop nqptp.service
+sudo rm /usr/local/bin/shairport-sync
+sudo rm /usr/bin/shairport-sync
+sudo rm /etc/shairport-sync.conf
+echo "Download"
+mkdir /tmp/sha
+TMPURL="https://raw.githubusercontent.com/quatmo/shairport-sync2-volumio/main"
+TMPPATH="tmp/sha"
+
+sudo wget -O /$TMPPATH/nqptp.service.tar.gz $TMPURL/nqptp.service.tar.gz
+sudo wget -O /$TMPPATH/nqptp.tar.gz $TMPURL/nqptp.tar.gz
+sudo wget -O /$TMPPATH/syn-ap2.tar.gz $TMPURL/syn-ap2.tar.gz
+sudo wget -O /$TMPPATH/syn-co-2.tar.gz $TMPURL/syn-co-2.tar.gz
+sudo wget -O /$TMPPATH/ser-ap2.tar.gz $TMPURL/ser-ap2.tar.gz
+
+sudo tar -xzvf /$TMPPATH/nqptp.service.tar.gz --overwrite -C /
+sudo tar -xzvf /$TMPPATH/nqptp.tar.gz --overwrite -C /
+sudo tar -xzvf /$TMPPATH/syn-ap2.tar.gz --overwrite -C /
+sudo tar -xzvf /$TMPPATH/syn-co-2.tar.gz --overwrite -C /
+sudo tar -xzvf /$TMPPATH/ser-ap2.tar.gz --overwrite -C /
+
+
+sudo systemctl daemon-reload
+sudo systemctl enable nqptp.service
+sudo systemctl restart nqptp.service
+sudo systemctl enable shairport-sync.service
+sudo systemctl restart shairport-sync.service
+sync
+echo "Install OK"
+sudo systemctl status shairport-sync.service
+
