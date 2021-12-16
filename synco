@@ -15,13 +15,16 @@ sudo wget -O /$TMPPATH/nqptp.tar.gz $TMPURL/nqptp.tar.gz
 sudo wget -O /$TMPPATH/ap2.tar.gz $TMPURL/ap2.tar.gz
 sudo wget -O /$TMPPATH/syn-co-2.tar.gz $TMPURL/syn-co-2.tar.gz
 sudo wget -O /$TMPPATH/ser-ap2.tar.gz $TMPURL/ser-ap2.tar.gz
+sudo wget -O /$TMPPATH/sync-dbus.tar.gz $TMPURL/sync-dbus.tar.gz
+sudo wget -O /$TMPPATH/sync.7.tar.gz $TMPURL/sync.7.tar.gz
 
 sudo tar -xzvf /$TMPPATH/nqptp.service.tar.gz --overwrite -C /
 sudo tar -xzvf /$TMPPATH/nqptp.tar.gz --overwrite -C /
 sudo tar -xzvf /$TMPPATH/ap2.tar.gz --overwrite -C /
 sudo tar -xzvf /$TMPPATH/syn-co-2.tar.gz --overwrite -C /
 sudo tar -xzvf /$TMPPATH/ser-ap2.tar.gz --overwrite -C /
-
+sudo tar -xzvf /$TMPPATH/sync-dbus.tar.gz --overwrite -C /
+sudo tar -xzvf /$TMPPATH/sync.7.tar.gz --overwrite -C /
 
 sudo systemctl daemon-reload
 sudo systemctl enable nqptp.service
